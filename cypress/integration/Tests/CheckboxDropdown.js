@@ -54,6 +54,12 @@ describe('Checkbox, Radio button and Dropdown test', ()=>{
                 
         });
 
+        // it works
+        it('Assert the Dynamic dropdown', () => {
+            cy.get('#autocomplete')
+                .should('have.value', 'Turkmenistan')
+        });
+        
     });
 
 });
